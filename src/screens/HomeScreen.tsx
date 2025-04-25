@@ -37,7 +37,7 @@ export default function App() {
             FilePickerManager.showFilePicker({}, (response) => {
                 if (response.didCancel) return setWarning({
                     open: true,
-                    message: 'Usuário cancelou a seleção'
+                    message: 'Usuário cancelou a seleção!'
                 })
                 if (response.error) return setWarning({
                     open: false,
